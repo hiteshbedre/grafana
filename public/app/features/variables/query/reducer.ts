@@ -131,7 +131,7 @@ export const metricNamesToVariableValues = (variableRegEx: string, sort: Variabl
     options.push({ text: text, value: value, selected: false });
   }
 
-  options = uniqBy(options, 'value');
+  options = uniqBy(options, 'text');
   return sortVariableValues(options, sort);
 };
 
